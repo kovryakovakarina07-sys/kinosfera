@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киносфера</title>
+    <link rel="shortcut icon" href="images/icons/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="modalMessage">
+        <button class="close_message"><img src="images/icons/back.svg" alt=""></button>
+        <h2>Чтобы посмотреть данный фильм оформите подписку</h2>
+        <div class="buts_message">
+            <button class="close_message back">Отмена</button>
+            <a href="submit.html" class="btn1">Узнать подробнее</a>
+        </div>
+    </div>
+    <!-- Начало шапки -->
+    <div class="place_header"></div>
+    <header>
+        <div class="header cont">
+
+            <!-- Логотип -->
+            <a href="index.html">
+                <div class="logo">
+                    <img src="images/icons/logo.svg" alt="">
+                    <p>Киносфера</p>
+                </div>
+            </a>
+
+            <!-- Бургер -->
+            <button class="burger" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Меню -->
+            <div class="header_menu">
+                <nav>
+                    <a href="genres.html">Жанры</a>
+                    <a href="submit.html">Подписка</a>
+
+                    <button class="kid_link" type="button" aria-pressed="false">
+                        <a href="kidsMain.html"><span>Детский режим</span></a>
+
+                        <span class="kid_switch" aria-hidden="true">
+                            <span class="kid_icon"></span>
+                        </span>
+                    </button>
+                </nav>
+
+                <div class="acc">
+                    <div class="search_header">
+                        <button class="search_btn">
+                            <img src="images/icons/search.svg" alt="">
+                        </button>
+
+                        <input class="search_input" type="text" placeholder="Поиск...">
+                    </div>
+                    <button class="loginBtn">
+                        <img src="images/icons/login.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Конец шапки -->
+
+    <!-- Начало информации об одном фильме -->
+    <div class="item_banner">
+        <img src="images/banners/oneFilm.png" alt="">
+        <div class="item_descr">
+            <div class="mark">
+                <p>9.8</p>
+            </div>
+            <h2>МИМИМИШКИ</h2>
+            <div class="item_info">
+                <p>2015</p>
+                <img src="images/icons/Ellipse.svg" alt="">
+                <p>мультфильм</p>
+                <img src="images/icons/Ellipse.svg" alt="">
+                <p>комедия</p>
+                <img src="images/icons/Ellipse.svg" alt="">
+                <p>1 сезон</p>
+                <img src="images/icons/Ellipse.svg" alt="">
+                <p>Россия</p>
+                <img src="images/icons/Ellipse.svg" alt="">
+                <p>0+</p>
+            </div>
+            <p>Веселые истории двух медвежат: Кеши и Белой Тучки. Вместе с героями этой веселой истории, дети будут
+                познавать окружающий мир, знакомиться с самыми разнообразными предметами и тем, как они сделаны!</p>
+            <div class="buts_item">
+                <a href="#" class="btn1 watch-btn" data-subscription="true">Смотреть</a>
+                <form action="/" method="post">
+                    <label for="watch_later" onclick="toggleActive(this)"><svg width="31" height="42" viewBox="0 0 31 42" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="stroke0_109_405" fill="white">
+                                <path
+                                    d="M31 16.9116V4.2279C31 1.89621 29.0138 0 26.5714 0H4.42857C1.98621 0 0 1.89621 0 4.2279V42L15.5 32.1363L31 42V16.9116Z" />
+                            </mask>
+                            <path
+                                d="M31 16.9116V4.2279C31 1.89621 29.0138 0 26.5714 0H4.42857C1.98621 0 0 1.89621 0 4.2279V42L15.5 32.1363L31 42V16.9116Z"
+                                stroke-width="8" stroke="white" mask="url(#stroke0_109_405)" />
+                        </svg>
+                    </label>
+                    <input type="submit" name="watch_later">
+                </form>
+                <form action="/" method="post">
+                    <label for="favorite" onclick="toggleActive(this)"><svg width="41" height="37" viewBox="0 0 41 37" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="stroke0_109_404" fill="white">
+                                <path
+                                    d="M40.0081 7.58242C39.372 6.0986 38.4547 4.754 37.3076 3.6239C36.1597 2.49039 34.8064 1.58961 33.3211 0.970541C31.7809 0.326005 30.129 -0.00388314 28.4612 3.44877e-05C26.1215 3.44877e-05 23.8387 0.645445 21.8549 1.86455C21.3803 2.15618 20.9295 2.4765 20.5023 2.8255C20.0752 2.4765 19.6244 2.15618 19.1498 1.86455C17.166 0.645445 14.8832 3.44877e-05 12.5434 3.44877e-05C10.8587 3.44877e-05 9.22606 0.32513 7.68363 0.970541C6.19342 1.59205 4.85032 2.48606 3.69707 3.6239C2.5485 4.75272 1.63102 6.09764 0.996642 7.58242C0.33696 9.12662 0 10.7664 0 12.4541C0 14.0461 0.322722 15.705 0.963421 17.3927C1.49971 18.803 2.26855 20.2659 3.25095 21.7432C4.80761 24.081 6.94802 26.5192 9.60573 28.9909C14.0099 33.0881 18.3714 35.9183 18.5565 36.0331L19.6813 36.7598C20.1796 37.0801 20.8203 37.0801 21.3186 36.7598L22.4434 36.0331C22.6285 35.9136 26.9853 33.0881 31.3942 28.9909C34.0519 26.5192 36.1923 24.081 37.749 21.7432C38.7314 20.2659 39.505 18.803 40.0365 17.3927C40.6772 15.705 41 14.0461 41 12.4541C41.0047 10.7664 40.6677 9.12662 40.0081 7.58242Z" />
+                            </mask>
+                            <path
+                                d="M40.0081 7.58242C39.372 6.0986 38.4547 4.754 37.3076 3.6239C36.1597 2.49039 34.8064 1.58961 33.3211 0.970541C31.7809 0.326005 30.129 -0.00388314 28.4612 3.44877e-05C26.1215 3.44877e-05 23.8387 0.645445 21.8549 1.86455C21.3803 2.15618 20.9295 2.4765 20.5023 2.8255C20.0752 2.4765 19.6244 2.15618 19.1498 1.86455C17.166 0.645445 14.8832 3.44877e-05 12.5434 3.44877e-05C10.8586 3.44877e-05 9.22606 0.32513 7.68363 0.970541C6.19342 1.59205 4.85032 2.48606 3.69707 3.6239C2.5485 4.75272 1.63102 6.09764 0.996642 7.58242C0.33696 9.12662 0 10.7664 0 12.4541C0 14.0461 0.322722 15.705 0.963421 17.3927C1.49971 18.803 2.26855 20.2659 3.25095 21.7432C4.80761 24.081 6.94802 26.5192 9.60573 28.9909C14.0099 33.0881 18.3714 35.9183 18.5565 36.0331L19.6813 36.7598C20.1796 37.0801 20.8203 37.0801 21.3186 36.7598L22.4434 36.0331C22.6285 35.9136 26.9853 33.0881 31.3942 28.9909C34.0519 26.5192 36.1923 24.081 37.749 21.7432C38.7314 20.2659 39.505 18.803 40.0365 17.3927C40.6772 15.705 40.9999 14.0461 40.9999 12.4541C41.0047 10.7664 40.6677 9.12662 40.0081 7.58242Z"
+                                stroke-width="8" stroke="white" mask="url(#stroke0_109_404)" />
+                        </svg>
+                    </label>
+                    <input type="submit" name="favorite">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Конец информации об одном фильме -->
+
+    <!-- Начало сезонов -->
+    <div class="seasons">
+        <div class="zag">
+            <h2>СЕЗОНЫ И СЕРИИ</h2>
+        </div>
+        <div class="season">
+            <h2>1 сезон</h2>
+            <div class="series_block">
+                <div class="films">
+                    <a href="item.html">
+                        <div class="film">
+                            <div class="mark_film">
+                                <p>6.8</p>
+                            </div>
+                            <img src="images/films/film1.png" alt="">
+                        </div>
+                    </a>
+                    <a href="item.html">
+                        <div class="film">
+                            <div class="mark_film">
+                                <p>6.8</p>
+                            </div>
+                            <img src="images/films/film2.png" alt="">
+                        </div>
+                    </a>
+                    <a href="item.html">
+                        <div class="film">
+                            <div class="mark_film">
+                                <p>6.8</p>
+                            </div>
+                            <img src="images/films/film3.png" alt="">
+                        </div>
+                    </a>
+                    <a href="item.html">
+                        <div class="film">
+                            <div class="mark_film">
+                                <p>6.8</p>
+                            </div>
+                            <img src="images/films/film4.png" alt="">
+                        </div>
+                    </a>
+                    <a href="item.html">
+                        <div class="film">
+                            <div class="mark_film">
+                                <p>6.8</p>
+                            </div>
+                            <img src="images/films/film5.png" alt="">
+                        </div>
+                    </a> <a href="item.html">
+                        <div class="film">
+                            <div class="mark_film">
+                                <p>6.8</p>
+                            </div>
+                            <img src="images/films/film6.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="count">
+                <p>количество серий: <span>261</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- Конец сезонов  -->
+
+    <!-- Начало актёров  -->
+    <div class="cast_block">
+        <div class="zag">
+            <h2>В ГЛАВНЫХ РОЛЯХ</h2>
+        </div>
+        <div class="cast">
+            <div class="cast_item">
+                <div class="cast_avatar">
+                    <p>ПК</p>
+                </div>
+                <div class="cast_name">
+                    <p>Полина Кутепова</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Конец актёров  -->
+
+    <!-- Начало оценки  -->
+    <div class="mark_block cont">
+        <div class="zag">
+            <h2>ОЦЕНИТЕ МУЛЬТФИЛЬМ</h2>
+        </div>
+
+        <div class="marks">
+            <form action="/" method="post" class="rating_form">
+                <div class="stars">
+
+                    <div class="star">
+                        <input type="radio" name="rating" id="star1" value="1">
+                        <label for="star1">
+                            <svg width="57" height="57" viewBox="0 0 57 57" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25.8334 3.9442C26.6627 1.75688 29.8011 1.75688 30.6329 3.9442L35.9974 18.8045C36.1846 19.2886 36.5141 19.7045 36.9426 19.9974C37.371 20.2903 37.8782 20.4463 38.3972 20.445H51.5803C54.0163 20.445 55.0789 23.4771 53.1637 24.9621L43.7824 33.403C43.3628 33.7266 43.0562 34.1745 42.9063 34.6827C42.7564 35.191 42.771 35.7336 42.9479 36.233L46.3739 50.7538C47.2084 53.0863 44.508 55.0896 42.4659 53.6538L29.7233 45.568C29.2869 45.2613 28.7666 45.0967 28.2332 45.0967C27.6998 45.0967 27.1794 45.2613 26.7431 45.568L14.0005 53.6538C11.961 55.0896 9.25799 53.0837 10.0925 50.7538L13.5185 36.233C13.6954 35.7336 13.7099 35.191 13.5601 34.6827C13.4102 34.1745 13.1036 33.7266 12.684 33.403L3.30265 24.9621C1.38492 23.4771 2.45263 20.445 4.88349 20.445H18.0666C18.5856 20.4463 19.0928 20.2903 19.5212 19.9974C19.9497 19.7045 20.2792 19.2886 20.4664 18.8045L25.8334 3.9442Z"
+                                    stroke-width="4.60737" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke="#29F261" />
+                            </svg>
+
+                        </label>
+                    </div>
+
+                    <div class="star">
+                        <input type="radio" name="rating" id="star2" value="2">
+                        <label for="star2">
+                            <svg width="57" height="57" viewBox="0 0 57 57" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25.8334 3.9442C26.6627 1.75688 29.8011 1.75688 30.6329 3.9442L35.9974 18.8045C36.1846 19.2886 36.5141 19.7045 36.9426 19.9974C37.371 20.2903 37.8782 20.4463 38.3972 20.445H51.5803C54.0163 20.445 55.0789 23.4771 53.1637 24.9621L43.7824 33.403C43.3628 33.7266 43.0562 34.1745 42.9063 34.6827C42.7564 35.191 42.771 35.7336 42.9479 36.233L46.3739 50.7538C47.2084 53.0863 44.508 55.0896 42.4659 53.6538L29.7233 45.568C29.2869 45.2613 28.7666 45.0967 28.2332 45.0967C27.6998 45.0967 27.1794 45.2613 26.7431 45.568L14.0005 53.6538C11.961 55.0896 9.25799 53.0837 10.0925 50.7538L13.5185 36.233C13.6954 35.7336 13.7099 35.191 13.5601 34.6827C13.4102 34.1745 13.1036 33.7266 12.684 33.403L3.30265 24.9621C1.38492 23.4771 2.45263 20.445 4.88349 20.445H18.0666C18.5856 20.4463 19.0928 20.2903 19.5212 19.9974C19.9497 19.7045 20.2792 19.2886 20.4664 18.8045L25.8334 3.9442Z"
+                                    stroke-width="4.60737" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke="#29F261" />
+                            </svg>
+
+                        </label>
+                    </div>
+
+                    <div class="star">
+                        <input type="radio" name="rating" id="star3" value="3">
+                        <label for="star3">
+                            <svg width="57" height="57" viewBox="0 0 57 57" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25.8334 3.9442C26.6627 1.75688 29.8011 1.75688 30.6329 3.9442L35.9974 18.8045C36.1846 19.2886 36.5141 19.7045 36.9426 19.9974C37.371 20.2903 37.8782 20.4463 38.3972 20.445H51.5803C54.0163 20.445 55.0789 23.4771 53.1637 24.9621L43.7824 33.403C43.3628 33.7266 43.0562 34.1745 42.9063 34.6827C42.7564 35.191 42.771 35.7336 42.9479 36.233L46.3739 50.7538C47.2084 53.0863 44.508 55.0896 42.4659 53.6538L29.7233 45.568C29.2869 45.2613 28.7666 45.0967 28.2332 45.0967C27.6998 45.0967 27.1794 45.2613 26.7431 45.568L14.0005 53.6538C11.961 55.0896 9.25799 53.0837 10.0925 50.7538L13.5185 36.233C13.6954 35.7336 13.7099 35.191 13.5601 34.6827C13.4102 34.1745 13.1036 33.7266 12.684 33.403L3.30265 24.9621C1.38492 23.4771 2.45263 20.445 4.88349 20.445H18.0666C18.5856 20.4463 19.0928 20.2903 19.5212 19.9974C19.9497 19.7045 20.2792 19.2886 20.4664 18.8045L25.8334 3.9442Z"
+                                    stroke-width="4.60737" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke="#29F261" />
+                            </svg>
+
+                        </label>
+                    </div>
+
+                    <div class="star">
+                        <input type="radio" name="rating" id="star4" value="4">
+                        <label for="star4">
+                            <svg width="57" height="57" viewBox="0 0 57 57" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25.8334 3.9442C26.6627 1.75688 29.8011 1.75688 30.6329 3.9442L35.9974 18.8045C36.1846 19.2886 36.5141 19.7045 36.9426 19.9974C37.371 20.2903 37.8782 20.4463 38.3972 20.445H51.5803C54.0163 20.445 55.0789 23.4771 53.1637 24.9621L43.7824 33.403C43.3628 33.7266 43.0562 34.1745 42.9063 34.6827C42.7564 35.191 42.771 35.7336 42.9479 36.233L46.3739 50.7538C47.2084 53.0863 44.508 55.0896 42.4659 53.6538L29.7233 45.568C29.2869 45.2613 28.7666 45.0967 28.2332 45.0967C27.6998 45.0967 27.1794 45.2613 26.7431 45.568L14.0005 53.6538C11.961 55.0896 9.25799 53.0837 10.0925 50.7538L13.5185 36.233C13.6954 35.7336 13.7099 35.191 13.5601 34.6827C13.4102 34.1745 13.1036 33.7266 12.684 33.403L3.30265 24.9621C1.38492 23.4771 2.45263 20.445 4.88349 20.445H18.0666C18.5856 20.4463 19.0928 20.2903 19.5212 19.9974C19.9497 19.7045 20.2792 19.2886 20.4664 18.8045L25.8334 3.9442Z"
+                                    stroke-width="4.60737" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke="#29F261" />
+                            </svg>
+
+                        </label>
+                    </div>
+
+                    <div class="star">
+                        <input type="radio" name="rating" id="star5" value="5">
+                        <label for="star5">
+                            <svg width="57" height="57" viewBox="0 0 57 57" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25.8334 3.9442C26.6627 1.75688 29.8011 1.75688 30.6329 3.9442L35.9974 18.8045C36.1846 19.2886 36.5141 19.7045 36.9426 19.9974C37.371 20.2903 37.8782 20.4463 38.3972 20.445H51.5803C54.0163 20.445 55.0789 23.4771 53.1637 24.9621L43.7824 33.403C43.3628 33.7266 43.0562 34.1745 42.9063 34.6827C42.7564 35.191 42.771 35.7336 42.9479 36.233L46.3739 50.7538C47.2084 53.0863 44.508 55.0896 42.4659 53.6538L29.7233 45.568C29.2869 45.2613 28.7666 45.0967 28.2332 45.0967C27.6998 45.0967 27.1794 45.2613 26.7431 45.568L14.0005 53.6538C11.961 55.0896 9.25799 53.0837 10.0925 50.7538L13.5185 36.233C13.6954 35.7336 13.7099 35.191 13.5601 34.6827C13.4102 34.1745 13.1036 33.7266 12.684 33.403L3.30265 24.9621C1.38492 23.4771 2.45263 20.445 4.88349 20.445H18.0666C18.5856 20.4463 19.0928 20.2903 19.5212 19.9974C19.9497 19.7045 20.2792 19.2886 20.4664 18.8045L25.8334 3.9442Z"
+                                    stroke-width="4.60737" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke="#29F261" />
+                            </svg>
+
+                        </label>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Конец оценки  -->
+
+    <!-- Начало похожего -->
+    <div class="compilation cont">
+        <div class="zag">
+            <h2>ПОХОЖЕЕ</h2>
+        </div>
+        <div class="films_block">
+            <div class="films">
+                <div class="film">
+                    <div class="mark_film">6.8</div>
+                    <img src="images/films/film1.png" alt="">
+                </div>
+                <div class="film">
+                    <div class="mark_film">6.8</div>
+                    <img src="images/films/film2.png" alt="">
+                </div>
+                <div class="film">
+                    <div class="mark_film">6.8</div>
+                    <img src="images/films/film3.png" alt="">
+                </div>
+                <div class="film">
+                    <div class="mark_film">6.8</div>
+                    <img src="images/films/film4.png" alt="">
+                </div>
+                <div class="film">
+                    <div class="mark_film">6.8</div>
+                    <img src="images/films/film5.png" alt="">
+                </div>
+                <div class="film">
+                    <div class="mark_film">6.8</div>
+                    <img src="images/films/film6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Конец похожего -->
+
+    <!-- Начало подвала -->
+    <footer class="cont">
+        <div class="footer_top">
+            <div class="social">
+                <a href="#"><img src="images/icons/MAX.svg" alt=""></a>
+                <a href="#"><img src="images/icons/ВК.svg" alt=""></a>
+                <a href="#"><img src="images/icons/RUTUBE.svg" alt=""></a>
+            </div>
+            <h4>Мы всегда рады помочь</h4>
+        </div>
+        <div class="footer_text">
+            <p>Сервис Киносфера может содержать информацию, не предназначенную для несовершеннолетних.
+                На Киносфере есть фильмы и сериалы, в которых упоминаются наркотики. Незаконное потребление
+                наркотических средств, психотропных веществ, их аналогов причиняет вред здоровью, их незаконный оборот
+                запрещён и влечёт установленную законодательством ответственность.</p>
+
+            <div class="footer_adress">
+                <p>Есть вопросы ? Напишите нам: kinosfera@gmail.com</p>
+                <p>Адрес главного офиса: ул Баумана, 60</p>
+            </div>
+
+            <p>© 2026 Киносфера. 18+</p>
+        </div>
+    </footer>
+    <!-- Конец подвала -->
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киносфера — Добавить сериал</title>
+    <link rel="shortcut icon" href="images/icons/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Начало шапки -->
+    <div class="place_header"></div>
+    <header>
+        <div class="header cont">
+            <a href="../index.html">
+                <div class="logo">
+                    <img src="../images/icons/logo.svg" alt="">
+                    <p>Киносфера</p>
+                </div>
+            </a>
+            <nav>
+                <a href="../genres.html">Жанры</a>
+                <a href="../submit.html">Подписка</a>
+                <a href="../kidsMain.html" class="kid_link">Детский режим <img src="../images/icons/off.svg" alt=""></a>
+            </nav>
+            <div class="acc">
+                <a href="../search.html"><img src="../images/icons/search.svg" alt=""></a>
+                <button><img src="../images/icons/login.svg" alt=""></button>
+            </div>
+        </div>
+    </header>
+    <!-- Конец шапки -->
+    <!-- Начало добавления -->
+    <div class="add_block cont">
+
+        <div class="add_top">
+            <div class="edit_top">
+                <h2>Редактировать сериал</h2>
+                <a href="./edit_series.html">Редактировать серии →</a>
+            </div>
+            <a href="./admin.html" class="back_link">Назад →</a>
+        </div>
+
+        <form action="/" method="post" class="add_form series">
+
+            <!-- Левая колонка -->
+            <div class="add_left">
+
+                <div class="pole">
+                    <label><img src="../images/icons/film.svg" alt="">Введите название сериала</label>
+                    <input type="text" name="title" placeholder="Мимимишки" value="Мимимишки">
+                </div>
+
+                <div class="pole">
+                    <label><img src="../images/icons/description.svg" alt="">Введите описание сериала</label>
+                    <textarea name="descr" placeholder="Расскажите о фильме...">Мимимишки</textarea>
+                </div>
+
+                <div class="pole">
+                    <label><img src="../images/icons/genre.svg" alt="">Выберите жанр</label>
+                    <div class="variants">
+                        <div class="variant"><label for="genre1">Мультфильм</label><input type="checkbox" name="genre1"
+                                id="genre1"></div>
+                        <div class="variant active"><label for="genre2">Ужасы</label><input type="checkbox"
+                                name="genre2" checked id="genre2"></div>
+                        <div class="variant"><label for="genre3">Боевики</label><input type="checkbox" name="genre3"
+                                id="genre3"></div>
+                        <div class="variant"><label for="genre4">Комедия</label><input type="checkbox" name="genre4"
+                                id="genre4"></div>
+                        <div class="variant"><label for="genre5">Вестерны</label><input type="checkbox" name="genre5"
+                                id="genre5"></div>
+                        <div class="variant"><label for="genre6">Ромкомы</label><input type="checkbox" name="genre6"
+                                id="genre6"></div>
+                        <div class="variant"><label for="genre7">Фантастика</label><input type="checkbox" name="genre7"
+                                id="genre7"></div>
+                        <div class="variant"><label for="genre8">Детективы</label><input type="checkbox" name="genre8"
+                                id="genre8"></div>
+                        <div class="variant"><label for="genre9">Драма</label><input type="checkbox" name="genre9"
+                                id="genre9"></div>
+                        <div class="variant"><label for="genre10">Триллеры</label><input type="checkbox" name="genre10"
+                                id="genre10"></div>
+                        <div class="variant active"><label for="genre11">Семейное</label><input type="checkbox"
+                                name="genre11" id="genre11" checked></div>
+                        <div class="variant"><label for="genre12">Фэнтези</label><input type="checkbox" name="genre12"
+                                id="genre12"></div>
+                    </div>
+                </div>
+
+                <div class="pole">
+                    <label><img src="../images/icons/calendar_add.svg" alt="">Год выпуска</label>
+                    <input type="text" name="year" placeholder="2015" value="2015">
+                </div>
+
+            </div>
+
+            <!-- Правая колонка -->
+            <div class="add_right">
+
+                <div class="pole">
+                    <label><img src="../images/icons/picture.svg" alt="">Добавьте новую обложку</label>
+                    <div class="upload">
+                        <img src="../images/icons/addPhoto.svg" alt="">
+                        <p>Загрузите постер или обложку</p>
+                        <span>PNG, JPG • до 10МБ</span>
+                        <input type="file" name="cover">
+                    </div>
+                </div>
+
+                <div class="pole">
+                    <label><img src="../images/icons/video_icon.svg" alt="">Добавьте новый трейлер</label>
+                    <div class="upload">
+                        <img src="../images/icons/addVideo.svg" alt="">
+                        <p>Загрузите видео с трейлером</p>
+                        <span>MP4, MOV • до 500МБ</span>
+                        <input type="file" name="trailer">
+                    </div>
+                </div>
+
+                <div class="pole">
+                    <label><img src="../images/icons/age.svg" alt="">Возраст</label>
+                    <div class="variants">
+                        <form action="/" method="post">
+                            <div class="variant"><label for="age1">0+</label><input type="checkbox" name="age1"
+                                    id="age1"></div>
+                            <div class="variant active"><label for="age2">6+</label><input type="checkbox" name="age2"
+                                    checked id="age2">
+                            </div>
+                            <div class="variant"><label for="age3">12+</label><input type="checkbox" name="age3"
+                                    id="age3"></div>
+                            <div class="variant"><label for="age4">16+</label><input type="checkbox" name="age4"
+                                    id="age4"></div>
+                            <div class="variant"><label for="age5">18+</label><input type="checkbox" name="age5"
+                                    id="age5"></div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="pole">
+                    <label><img src="../images/icons/country.svg" alt="">Выберите страны</label>
+
+                    <form action="/" method="post">
+                        <div class="variants">
+                            <div class="variant">
+                                <label for="England">Англия</label>
+                                <input type="checkbox" name="England" id="England">
+                            </div>
+                            <div class="variant">
+                                <label for="Russia">Россия</label>
+                                <input type="checkbox" name="Russia" id="Russia">
+                            </div>
+                            <div class="variant">
+                                <label for="Britain">Великобритания</label>
+                                <input type="checkbox" name="Britain" id="Britain">
+                            </div>
+                            <div class="variant">
+                                <label for="France">Франция</label>
+                                <input type="checkbox" name="France" id="France">
+                            </div>
+                            <div class="variant">
+                                <label for="Hungary">Венгрия</label>
+                                <input type="checkbox" name="Hungary" id="Hungary">
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="toggle">
+                    <input type="checkbox" name="public" id="public">
+                    <label for="public">Сделать сериал общедоступным</label>
+                </div>
+
+            </div>
+
+
+
+            <input type="submit" value="Создать сериал" class="btn1 add_btn">
+
+        </form>
+    </div>
+    <!-- Конец добавления -->
+
+    <!-- Начало подвала -->
+    <footer class="cont">
+        <div class="footer_top">
+            <div class="social">
+                <a href="#"><img src="images/icons/MAX.svg" alt=""></a>
+                <a href="#"><img src="images/icons/ВК.svg" alt=""></a>
+                <a href="#"><img src="images/icons/RUTUBE.svg" alt=""></a>
+            </div>
+            <h4>Мы всегда рады помочь</h4>
+        </div>
+        <div class="footer_text">
+            <p>Сервис Киносфера может содержать информацию, не предназначенную для несовершеннолетних.
+                На Киносфере есть фильмы и сериалы, в которых упоминаются наркотики. Незаконное потребление
+                наркотических средств, психотропных веществ, их аналогов причиняет вред здоровью, их незаконный оборот
+                запрещён и влечёт установленную законодательством ответственность.</p>
+
+            <div class="footer_adress">
+                <p>Есть вопросы ? Напишите нам: kinosfera@gmail.com</p>
+                <p>Адрес главного офиса: ул Баумана, 60</p>
+            </div>
+
+            <p>© 2026 Киносфера. 18+</p>
+        </div>
+    </footer>
+    <!-- Конец подвала -->
+</body>
+
+</html>

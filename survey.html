@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киносфера</title>
+    <link rel="shortcut icon" href="images/icons/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+ <!-- Начало шапки -->
+    <div class="place_header"></div>
+    <header>
+        <div class="header cont">
+
+            <!-- Логотип -->
+            <a href="index.html">
+                <div class="logo">
+                    <img src="images/icons/logo.svg" alt="">
+                    <p>Киносфера</p>
+                </div>
+            </a>
+
+            <!-- Бургер -->
+            <button class="burger" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Меню -->
+            <div class="header_menu">
+                <nav>
+                    <a href="genres.html">Жанры</a>
+                    <a href="submit.html">Подписка</a>
+
+                    <button class="kid_link" type="button" aria-pressed="false">
+                        <a href="kidsMain.html"><span>Детский режим</span></a>
+
+                        <span class="kid_switch" aria-hidden="true">
+                            <span class="kid_icon"></span>
+                        </span>
+                    </button>
+                </nav>
+
+                <div class="acc">
+                    <div class="search_header">
+                        <button class="search_btn">
+                            <img src="images/icons/search.svg" alt="">
+                        </button>
+
+                        <input class="search_input" type="text" placeholder="Поиск...">
+                    </div>
+                    <button class="loginBtn">
+                        <img src="images/icons/login.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Конец шапки -->
+
+    <!-- Начало опроса -->
+    <div class="survey_block">
+        <div class="survey_top">
+            <div class="survey_zag">
+                <h2>Расскажите немного о себе</h2>
+                <p>Это поможет нам подобрать для вас идеальный контент</p>
+
+            </div>
+            <div class="back_prof"><a href="./profile/continue.html">Назад →</a></div>
+        </div>
+
+        <form action="/" name="survey" method="post">
+            <div class="pole_survey">
+                <h3>1. Кого вы чаще смотрите ?</h3>
+                <div class="age_survey">
+                    <form action="/" method="post">
+
+                        <div class="variants">
+                            <div class="variant">
+                                <input type="checkbox" name="child" id="child">
+                                <label for="child">Ребёнок (0-7 лет)</label>
+                            </div>
+
+                            <div class="variant">
+                                <label for="kid">Школьник (8-12 лет)</label>
+                                <input type="checkbox" name="kid" id="kid">
+                            </div>
+
+                            <div class="variant">
+                                <label for="student">Подросток (13-17 лет)</label>
+                                <input type="checkbox" name="student" id="student">
+                            </div>
+
+                            <div class="variant">
+                                <label for="adult">Взрослый (18+)</label>
+                                <input type="checkbox" name="adult" id="adult">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="pole_survey">
+                <h3>2. Какие жанры вы предпочитаете ?</h3>
+                <div class="age_survey">
+                    <form action="/" method="post">
+                        <div class="variant">
+                            <label for="cartoons">Мультфильм</label>
+                            <input type="checkbox" name="cartoons" id="cartoons">
+                        </div>
+                        <div class="variant">
+                            <label for="horror">Ужасы</label>
+                            <input type="checkbox" name="horror" id="horror">
+                        </div>
+                        <div class="variant">
+                            <label for="fighter">Боевики</label>
+                            <input type="checkbox" name="fighter" id="fighter">
+                        </div>
+                        <div class="variant">
+                            <label for="triller">Триллеры</label>
+                            <input type="checkbox" name="triller" id="triller">
+                        </div>
+                        <div class="variant">
+                            <label for="fantastic">Фантастика</label>
+                            <input type="checkbox" name="fantastic" id="fantastic">
+                        </div>
+                        <div class="variant">
+                            <label for="detectives">Детективы</label>
+                            <input type="checkbox" name="detectives" id="detectives">
+                        </div>
+                        <div class="variant">
+                            <label for="comedy">Комедия</label>
+                            <input type="checkbox" name="comedy" id="comedy">
+                        </div>
+                        <div class="variant">
+                            <label for="vestern">Вестерны</label>
+                            <input type="checkbox" name="vestern" id="vestern">
+                        </div>
+                        <div class="variant">
+                            <label for="romCom">Ромкомы</label>
+                            <input type="checkbox" name="romCom" id="romCom">
+                        </div>
+                        <div class="variant">
+                            <label for="family">Семейное</label>
+                            <input type="checkbox" name="family" id="family">
+                        </div>
+                        <div class="variant">
+                            <label for="fantasy">Фэнтези</label>
+                            <input type="checkbox" name="fantasy" id="fantasy">
+                        </div>
+                        <div class="variant">
+                            <label for="drama">Драма</label>
+                            <input type="checkbox" name="drama" id="drama">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="pole_survey">
+                <h3>3. Какие актёры вам нравятся ?</h3>
+                <div class="serach_survey">
+                    <form action="/" method="post">
+                        <div class="search">
+                            <label for="search"><img src="images/icons/search.svg" alt=""></label>
+                            <input type="text" placeholder="Введите имя, фамилию актёра, продюс..." name="search_actor">
+                            <input type="submit" name="search" style="display: none;">
+                        </div>
+
+                        <div class="variants">
+                            <div class="variant">
+                                <label for="actor1">
+                                    <div class="cast_item">
+                                        <div class="cast_avatar">
+                                            <p>ПК</p>
+                                        </div>
+                                        <p>Полина Кутепова</p>
+                                    </div>
+                                </label>
+                                <input type="checkbox" name="actor1" id="actor1">
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+            <div class="pole_survey">
+                <h3>4. Фильмы каких стран вы смотрите чаще ?</h3>
+                <div class="age_survey">
+                    <form action="/" method="post">
+                        <div class="variant">
+                            <label for="England">Англия</label>
+                            <input type="checkbox" name="England" id="England">
+                        </div>
+                        <div class="variant">
+                            <label for="Russia">Россия</label>
+                            <input type="checkbox" name="Russia" id="Russia">
+                        </div>
+                        <div class="variant">
+                            <label for="Britain">Великобритания</label>
+                            <input type="checkbox" name="Britain" id="Britain">
+                        </div>
+                        <div class="variant">
+                            <label for="France">Франция</label>
+                            <input type="checkbox" name="France" id="France">
+                        </div>
+                        <div class="variant">
+                            <label for="Hungary">Венгрия</label>
+                            <input type="checkbox" name="Hungary" id="Hungary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <input type="submit" value="Собрать подборку" class="btn1">
+        </form>
+    </div>
+    <!-- Конец опроса -->
+
+
+    <!-- Начало подвала -->
+    <footer class="cont">
+        <div class="footer_top">
+            <div class="social">
+                <a href="#"><img src="images/icons/MAX1.svg" alt=""></a>
+                <a href="#"><img src="images/icons/ВК1.svg" alt=""></a>
+                <a href="#"><img src="images/icons/RUTUBE1.svg" alt=""></a>
+            </div>
+            <h4>Мы всегда рады помочь</h4>
+        </div>
+        <div class="footer_text">
+            <p>Сервис Киносфера может содержать информацию, не предназначенную для несовершеннолетних.
+                На Киносфере есть фильмы и сериалы, в которых упоминаются наркотики. Незаконное потребление
+                наркотических средств, психотропных веществ, их аналогов причиняет вред здоровью, их незаконный оборот
+                запрещён и влечёт установленную законодательством ответственность.</p>
+
+            <div class="footer_adress">
+                <p>Есть вопросы ? Напишите нам: kinosfera@gmail.com</p>
+                <p>Адрес главного офиса: ул Баумана, 60</p>
+            </div>
+
+            <p>© 2026 Киносфера. 18+</p>
+        </div>
+    </footer>
+    <!-- Конец подвала -->
+</body>
+
+</html>

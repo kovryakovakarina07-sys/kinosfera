@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киносфера</title>
+    <link rel="shortcut icon" href="../images/icons/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Начало шапки -->
+    <div class="place_header"></div>
+    <header>
+        <div class="header cont">
+            <a href="../index.html">
+                <div class="logo">
+                    <img src="../images/icons/logo.svg" alt="">
+                    <p>Киносфера</p>
+                </div>
+            </a>
+            <nav>
+                <a href="../genres.html">Жанры</a>
+                <a href="../submit.html">Подписка</a>
+                <a href="../kidsMain.html" class="kid_link">Детский режим <img src="../images/icons/off.svg" alt=""></a>
+            </nav>
+            <div class="acc">
+                <a href="../search.html"><img src="../images/icons/search.svg" alt=""></a>
+                <button><img src="../images/icons/login.svg" alt=""></button>
+            </div>
+        </div>
+    </header>
+    <!-- Конец шапки -->
+
+    <!-- Начало добавления серии -->
+    <div class="add_block cont">
+
+        <div class="add_top">
+            <h2>Добавить серию</h2>
+            <a href="./admin.html" class="back_link">Назад →</a>
+        </div>
+
+        <form action="/" method="post" class="add_form episode_form">
+
+            <!-- Левая колонка -->
+            <div class="add_left">
+
+                <div class="pole">
+                    <label><img src="../images/icons/film.svg" alt="">Введите id сериала</label>
+                    <input type="text" name="season" placeholder="1">
+                </div>
+
+                <div class="pole">
+                    <label><img src="../images/icons/film.svg" alt="">Введите номер сезона</label>
+                    <input type="text" name="season" placeholder="1">
+                </div>
+
+                <div class="pole">
+                    <label><img src="../images/icons/film.svg" alt="">Введите номер серии</label>
+                    <input type="text" name="episode" placeholder="1">
+                </div>
+
+                <div class="pole">
+                    <label><img src="../images/icons/timer.svg" alt="">Продолжительность (в минутах)</label>
+                    <input type="text" name="duration" placeholder="360">
+                </div>
+
+            </div>
+
+            <!-- Правая колонка -->
+            <div class="add_right">
+
+                <div class="pole">
+                    <label><img src="../images/icons/picture.svg" alt="">Добавьте обложку</label>
+                    <div class="upload">
+                        <img src="../images/icons/addPhoto.svg" alt="">
+                        <p>Загрузите постер или обложку</p>
+                        <span>PNG, JPG • до 10МБ</span>
+                        <input type="file" name="cover">
+                    </div>
+                </div>
+
+                <div class="pole">
+                    <label><img src="../images/icons/video_icon.svg" alt="">Добавьте серию</label>
+                    <div class="upload">
+                        <img src="../images/icons/addVideo.svg" alt="">
+                        <p>Загрузите видео с серией</p>
+                        <span>MP4, MOV • до 500МБ</span>
+                        <input type="file" name="episode_file">
+                    </div>
+                </div>
+
+            </div>
+
+            <input type="submit" value="Добавить серию" class="btn1 add_btn">
+
+        </form>
+    </div>
+    <!-- Конец добавления серии -->
+
+    <!-- Начало подвала -->
+    <footer class="cont">
+        <div class="footer_top">
+            <div class="social">
+                <a href="#"><img src="images/icons/MAX.svg" alt=""></a>
+                <a href="#"><img src="images/icons/ВК.svg" alt=""></a>
+                <a href="#"><img src="images/icons/RUTUBE.svg" alt=""></a>
+            </div>
+            <h4>Мы всегда рады помочь</h4>
+        </div>
+        <div class="footer_text">
+            <p>Сервис Киносфера может содержать информацию, не предназначенную для несовершеннолетних.
+                На Киносфере есть фильмы и сериалы, в которых упоминаются наркотики. Незаконное потребление
+                наркотических средств, психотропных веществ, их аналогов причиняет вред здоровью, их незаконный оборот
+                запрещён и влечёт установленную законодательством ответственность.</p>
+
+            <div class="footer_adress">
+                <p>Есть вопросы ? Напишите нам: kinosfera@gmail.com</p>
+                <p>Адрес главного офиса: ул Баумана, 60</p>
+            </div>
+
+            <p>© 2026 Киносфера. 18+</p>
+        </div>
+    </footer>
+    <!-- Конец подвала -->
+</body>
+
+</html>

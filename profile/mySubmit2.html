@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киносфера</title>
+    <link rel="shortcut icon" href="../images/icons/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+<!-- Начало шапки -->
+    <div class="place_header"></div>
+    <header>
+        <div class="header cont">
+
+            <!-- Логотип -->
+            <a href="../index.html">
+                <div class="logo">
+                    <img src="../images/icons/logo.svg" alt="">
+                    <p>Киносфера</p>
+                </div>
+            </a>
+
+            <!-- Бургер -->
+            <button class="burger" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Меню -->
+            <div class="header_menu">
+                <nav>
+                    <a href="../genres.html">Жанры</a>
+                    <a href="../submit.html">Подписка</a>
+
+                    <button class="kid_link" type="button" aria-pressed="false">
+                        <a href="../kidsMain.html"><span>Детский режим</span></a>
+
+                        <span class="kid_switch" aria-hidden="true">
+                            <span class="kid_icon"></span>
+                        </span>
+                    </button>
+                </nav>
+
+                <div class="acc">
+                    <div class="search_header">
+                        <button class="search_btn">
+                            <img src="../images/icons/search.svg" alt="">
+                        </button>
+
+                        <input class="search_input" type="text" placeholder="Поиск...">
+                    </div>
+                    <button class="loginBtn">
+                        <img src="../images/icons/login.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Конец шапки -->
+
+    <!-- Начало профиля -->
+    <div class="profile_block cont">
+        <div class="profile">
+            <div class="prof_info">
+                <div class="avatar_prof"><img src="images/" alt=""></div>
+                <div class="prof_name">
+                    <h3>Карина</h3>
+                    <div class="prof_edit">
+                        <p>19 лет</p>
+                        <a href="#"><img src="../images/icons/edit.svg" alt=""></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="../admin/admin.html">Админ панель →</a>
+        </div>
+
+        <!-- Начало Продолжить -->
+        <div class="profile_nav">
+            <a href="../profile/continue.html"><img src="../images/icons/continue.svg" alt="">Продолжить</a>
+            <a href="../profile/favotite.html"><img src="../images/icons/myFavorite.svg" alt="">Избранное</a>
+            <a href="../profile/watchLater.html"><img src="../images/icons/myWatchLater.svg" alt="">Буду
+                смотреть</a>
+            <a href="../profile/myCompilation.html"><img src="../images/icons/myCompilation.svg" alt="">Моя
+                подборка</a>
+            <a href="../profile/mySubmit.html" class="active"><img src="../images/icons/mySubmit2.svg"
+                    alt="">Подписка</a>
+        </div>
+        
+        <div class="submit_marketing">
+            <div class="submit_left">
+                <h4>лучший выбор</h4>
+                <h2>Всё, что Вы любите -
+                    в одной подписке</h2>
+                <p>Фильмы, сериалы и персональные подборки без ограничений по одной подписке.</p>
+                <div class="phones">
+                    <img src="../images/icons/phone1.svg" alt="">
+                    <img src="../images/icons/phone2.svg" alt="">
+                    <img src="../images/icons/phone3.svg" alt="">
+                    <img src="../images/icons/phone4.svg" alt="">
+                    <p>На всех устройствах</p>
+                </div>
+                <h5>Срок действия текущей подписки до: <span>29.10.2026г</span></h5>
+            </div>
+           <div class="line_submit">
+             <img src="../images/icons/line.png" alt="">
+           </div>
+            <div class="submit_right sub_form">
+                <h2>Оформление подписки</h2>
+                <form action="/" method="post">
+                    <div class="pole">
+                        <label for=""><img src="../images/icons/card.svg" alt="">Введите номер карты*</label>
+                        <input type="text" placeholder="2222 2222 2222 2222" name="card">
+                        <div class="errorCard error">
+                            <p>! Неверный формат карты</p>
+                        </div>
+                    </div>
+                    <div class="poles">
+                        <div class="pole">
+                            <label for=""><img src="../images/icons/calendar.svg" alt="">Введите месяц*</label>
+                            <input type="text" placeholder="12/34" name="calendar">
+                            <div class="errorCalendar error">
+                                <p>! Неверный формат месяца</p>
+                            </div>
+                        </div>
+                        <div class="pole">
+                            <label for=""><img src="../images/icons/lok.svg" alt="">Введите код*</label>
+                            <input type="text" placeholder="***" name="kod">
+                            <div class="errorKod error">
+                                <p>! Неверный формат кода</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pole">
+                        <label for=""><img src="../images/icons/calendar.svg" alt="">На сколько месяцев*</label>
+                        <input type="text" placeholder="1" name="month">
+                        <div class="errorMonth error">
+                            <p>! Неверный формат кода</p>
+                        </div>
+                    </div>
+                    <p>Итого: 299 ₽</p>
+                    <input type="submit" value="Оплатить" class="btn1">
+                </form>
+            </div>
+        </div>
+        <!-- Конец Подписка -->
+    </div>
+    <!-- Конец профиля -->
+
+
+    <!-- Начало подвала -->
+    <footer class="cont">
+        <div class="footer_top">
+            <div class="social">
+                <a href="#"><img src="images/icons/MAX.svg" alt=""></a>
+                <a href="#"><img src="images/icons/ВК.svg" alt=""></a>
+                <a href="#"><img src="images/icons/RUTUBE.svg" alt=""></a>
+            </div>
+            <h4>Мы всегда рады помочь</h4>
+        </div>
+        <div class="footer_text">
+            <p>Сервис Киносфера может содержать информацию, не предназначенную для несовершеннолетних.
+                На Киносфере есть фильмы и сериалы, в которых упоминаются наркотики. Незаконное потребление
+                наркотических средств, психотропных веществ, их аналогов причиняет вред здоровью, их незаконный оборот
+                запрещён и влечёт установленную законодательством ответственность.</p>
+
+            <div class="footer_adress">
+                <p>Есть вопросы ? Напишите нам: kinosfera@gmail.com</p>
+                <p>Адрес главного офиса: ул Баумана, 60</p>
+            </div>
+
+            <p>© 2026 Киносфера. 18+</p>
+        </div>
+    </footer>
+    <!-- Конец подвала -->
+</body>
+
+</html>

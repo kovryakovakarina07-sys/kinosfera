@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киносфера</title>
+    <link rel="shortcut icon" href="images/icons/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js" defer></script>
+</head>
+
+<body>
+  <!-- Начало шапки -->
+    <div class="place_header"></div>
+    <header>
+        <div class="header cont">
+
+            <!-- Логотип -->
+            <a href="../index.html">
+                <div class="logo">
+                    <img src="../images/icons/logo.svg" alt="">
+                    <p>Киносфера</p>
+                </div>
+            </a>
+
+            <!-- Бургер -->
+            <button class="burger" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Меню -->
+            <div class="header_menu">
+                <nav>
+                    <a href="../genres.html">Жанры</a>
+                    <a href="../submit.html">Подписка</a>
+
+                    <button class="kid_link" type="button" aria-pressed="false">
+                        <a href="../kidsMain.html"><span>Детский режим</span></a>
+
+                        <span class="kid_switch" aria-hidden="true">
+                            <span class="kid_icon"></span>
+                        </span>
+                    </button>
+                </nav>
+
+                <div class="acc">
+                    <div class="search_header">
+                        <button class="search_btn">
+                            <img src="../images/icons/search.svg" alt="">
+                        </button>
+
+                        <input class="search_input" type="text" placeholder="Поиск...">
+                    </div>
+                    <button class="loginBtn">
+                        <img src="../images/icons/login.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Конец шапки -->
+
+    <!-- Модалка удаление -->
+    <div class="modalDel">
+        <button class="close_message"><img src="../images/icons/back.svg" alt=""></button>
+        <h2>Вы действительно хотите удалить мультфильм “Мимимишки”?</h2>
+        <div class="buts_message">
+            <button class="close_message back">Отмена</button>
+            <input type="submit" class="btn1 confirm-delete" value="Удалить">
+        </div>
+        <p>Удаляя сериал, вы удаляете все серии и всю информациюю о данном сериале</p>
+    </div>
+    <!-- Модалка удаление -->
+
+    <!-- Начало профиля -->
+    <div class="profile_block cont">
+        <div class="profile">
+            <div class="prof_info">
+                <div class="avatar_prof"><img src="../images/banners/bannerKids.png" alt=""></div>
+                <div class="prof_name">
+                    <h3>Карина</h3>
+                    <div class="prof_edit">
+                        <p>админ</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="../profile/continue.html">Назад →</a>
+        </div>
+        <!-- Начало Продолжить -->
+        <div class="admin_nav">
+            <div class="add_nav">
+                <a href="add_film.html"><img src="../images/icons/add.svg" alt="">Контент</a>
+                <a href="add_compilation.html"><img src="../images/icons/add.svg" alt="">Подборка</a>
+                <a href="add_series.html"><img src="../images/icons/add.svg" alt="">Серия</a>
+                <!-- <a href="add_serial.html"><img src="../images/icons/add.svg" alt="">Серия</a> -->
+            </div>
+
+            <div class="search">
+                <label for="search"><img src="../images/icons/search.svg" alt=""></label>
+                <input type="text" placeholder="Введите имя, фамилию актёра, продюс..." name="search_actor">
+                <input type="submit" name="search" style="display: none;" id="search">
+            </div>
+        </div>
+        <div class="profile_nav admin_nav_films">
+            <a href="#" class="active" data-tab="films">Контент</a>
+            <a href="#" data-tab="compilation">Подборки</a>
+        </div>
+        <div class="profile_content">
+            <div class="tab_content active" id="films">
+                <div class="films">
+                    <div class="film">
+                        <div class="icons_admin">
+                            <div class="id_film">
+                                <p>id: 1</p>
+                            </div>
+                            <div class="icons_adm">
+                                <a href="edit_film.html"><img src="../images/icons/edit.svg" alt=""></a>
+                                <button class="delete-btn" data-id="1"><img src="../images/icons/delete.svg"
+                                        alt=""></button>
+                            </div>
+
+                        </div>
+                        <div class="mark_film">6.8</div>
+                        <div class="film_admin">
+                            <img src="../images/films/film1.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="film">
+                        <div class="icons_admin">
+                            <div class="id_film">
+                                <p>id: 1</p>
+                            </div>
+                            <div class="icons_adm">
+                                <a href="edit_serial.html"><img src="../images/icons/edit.svg" alt=""></a>
+                                <button><img src="../images/icons/delete.svg" alt=""></button>
+                            </div>
+
+                        </div>
+                        <div class="mark_film">6.8</div>
+                        <div class="film_admin">
+                            <img src="../images/films/film1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="film">
+                        <div class="icons_admin">
+                            <div class="id_film">
+                                <p>id: 1</p>
+                            </div>
+                            <div class="icons_adm">
+                                <a href="edit_film.html"><img src="../images/icons/edit.svg" alt=""></a>
+                                <button><img src="../images/icons/delete.svg" alt=""></button>
+                            </div>
+
+                        </div>
+                        <div class="mark_film">6.8</div>
+                        <div class="film_admin">
+                            <img src="../images/films/film1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="film">
+                        <div class="icons_admin">
+                            <div class="id_film">
+                                <p>id: 1</p>
+                            </div>
+                            <div class="icons_adm">
+                                <a href="edit_film.html"><img src="../images/icons/edit.svg" alt=""></a>
+                                <button><img src="../images/icons/delete.svg" alt=""></button>
+                            </div>
+
+                        </div>
+                        <div class="mark_film">6.8</div>
+                        <div class="film_admin">
+                            <img src="../images/films/film1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="film">
+                        <div class="icons_admin">
+                            <div class="id_film">
+                                <p>id: 1</p>
+                            </div>
+                            <div class="icons_adm">
+                                <a href="edit_film.html"><img src="../images/icons/edit.svg" alt=""></a>
+                                <button><img src="../images/icons/delete.svg" alt=""></button>
+                            </div>
+
+                        </div>
+                        <div class="mark_film">6.8</div>
+                        <div class="film_admin">
+                            <img src="../images/films/film1.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Пагинация -->
+                <div class="pagination">
+                    <a href="#">
+                        <div class="back_pag">←</div>
+                    </a>
+                    <a href="#">
+                        <div class="pag active_pag">1</div>
+                    </a>
+                    <a href="#">
+                        <div class="pag">2</div>
+                    </a>
+                    <a href="#">
+                        <div class="pag">3</div>
+                    </a>
+                    <a href="#">
+                        <div class="forward_pag">→</div>
+                    </a>
+                </div>
+                <!-- Пагинация -->
+            </div>
+
+            <div class="tab_content" id="compilation">
+                <!-- Начало подборок -->
+                <div class="compilations_block">
+                    <div class="compilation cont">
+                        <div class="zag">
+                            <h2><a href="edit_compilation.html">Продолжить просмотр</a></h2>
+                        </div>
+                        <div class="slider-wrapper">
+                            <div class="films_block ">
+                                <div class="films">
+                                    <div class="film">
+                                        <div class="icons_admin">
+                                            <div class="id_film">
+                                                <p>id: 1</p>
+                                            </div>
+                                            <div class="icons_adm">
+                                                <a href="edit_film.html"><img src="../images/icons/edit.svg" alt=""></a>
+                                                <button class="delete-btn" data-id="1"><img
+                                                        src="../images/icons/delete.svg" alt=""></button>
+                                            </div>
+
+                                        </div>
+                                        <div class="mark_film">6.8</div>
+                                        <div class="film_admin">
+                                            <img src="../images/films/film1.png" alt="">
+                                        </div>
+
+                                    </div>
+                                    <div class="film">
+                                        <div class="icons_admin">
+                                            <div class="id_film">
+                                                <p>id: 1</p>
+                                            </div>
+                                            <div class="icons_adm">
+                                                <a href="edit_serial.html"><img src="../images/icons/edit.svg"
+                                                        alt=""></a>
+                                                <button><img src="../images/icons/delete.svg" alt=""></button>
+                                            </div>
+
+                                        </div>
+                                        <div class="mark_film">6.8</div>
+                                        <div class="film_admin">
+                                            <img src="../images/films/film1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="film">
+                                        <div class="icons_admin">
+                                            <div class="id_film">
+                                                <p>id: 1</p>
+                                            </div>
+                                            <div class="icons_adm">
+                                                <a href="edit_film.html"><img src="../images/icons/edit.svg" alt=""></a>
+                                                <button><img src="../images/icons/delete.svg" alt=""></button>
+                                            </div>
+
+                                        </div>
+                                        <div class="mark_film">6.8</div>
+                                        <div class="film_admin">
+                                            <img src="../images/films/film1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="film">
+                                        <div class="icons_admin">
+                                            <div class="id_film">
+                                                <p>id: 1</p>
+                                            </div>
+                                            <div class="icons_adm">
+                                                <a href="edit_film.html"><img src="../images/icons/edit.svg" alt=""></a>
+                                                <button><img src="../images/icons/delete.svg" alt=""></button>
+                                            </div>
+
+                                        </div>
+                                        <div class="mark_film">6.8</div>
+                                        <div class="film_admin">
+                                            <img src="../images/films/film1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="film">
+                                        <div class="icons_admin">
+                                            <div class="id_film">
+                                                <p>id: 1</p>
+                                            </div>
+                                            <div class="icons_adm">
+                                                <a href="edit_film.html"><img src="../images/icons/edit.svg" alt=""></a>
+                                                <button><img src="../images/icons/delete.svg" alt=""></button>
+                                            </div>
+
+                                        </div>
+                                        <div class="mark_film">6.8</div>
+                                        <div class="film_admin">
+                                            <img src="../images/films/film1.png" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Кнопки навигации -->
+                                <div class="buttons_slider">
+                                    <div class="but_prev"><img src="../images/icons/arrow.svg" alt="Назад"></div>
+                                    <div class="but_next"><img src="../images/icons/arrow.svg" alt="Вперед"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compilation cont">
+                        <div class="zag">
+                            <h2><a href="edit_compilation.html">Продолжить просмотр</a></h2>
+                        </div>
+                        <div class="slider-wrapper">
+                            <div class="films_block ">
+                                <div class="films">
+                                    <div class="film">
+                                        <div class="icons_admin">
+                                            <div class="id_film">
+                                                <p>id: 1</p>
+                                            </div>
+                                            <div class="icons_adm">
+                                                <a href="edit_film.html"><img src="../images/icons/edit.svg" alt=""></a>
+                                                <button class="delete-btn" data-id="1"><img
+                                                        src="../images/icons/delete.svg" alt=""></button>
+                                            </div>
+
+                                        </div>
+                                        <div class="mark_film">6.8</div>
+                                        <div class="film_admin">
+                                            <img src="../images/films/film1.png" alt="">
+                                        </div>
+
+                                    </div>
+                                    <div class="film">
+                                        <div class="icons_admin">
+                                            <div class="id_film">
+                                                <p>id: 1</p>
+                                            </div>
+                                            <div class="icons_adm">
+                                                <a href="edit_serial.html"><img src="../images/icons/edit.svg"
+                                                        alt=""></a>
+                                                <button><img src="../images/icons/delete.svg" alt=""></button>
+                                            </div>
+
+                                        </div>
+                                        <div class="mark_film">6.8</div>
+                                        <div class="film_admin">
+                                            <img src="../images/films/film1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="film">
+                                        <div class="icons_admin">
+                                            <div class="id_film">
+                                                <p>id: 1</p>
+                                            </div>
+                                            <div class="icons_adm">
+                                                <a href="edit_film.html"><img src="../images/icons/edit.svg" alt=""></a>
+                                                <button><img src="../images/icons/delete.svg" alt=""></button>
+                                            </div>
+
+                                        </div>
+                                        <div class="mark_film">6.8</div>
+                                        <div class="film_admin">
+                                            <img src="../images/films/film1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="film">
+                                        <div class="icons_admin">
+                                            <div class="id_film">
+                                                <p>id: 1</p>
+                                            </div>
+                                            <div class="icons_adm">
+                                                <a href="edit_film.html"><img src="../images/icons/edit.svg" alt=""></a>
+                                                <button><img src="../images/icons/delete.svg" alt=""></button>
+                                            </div>
+
+                                        </div>
+                                        <div class="mark_film">6.8</div>
+                                        <div class="film_admin">
+                                            <img src="../images/films/film1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="film">
+                                        <div class="icons_admin">
+                                            <div class="id_film">
+                                                <p>id: 1</p>
+                                            </div>
+                                            <div class="icons_adm">
+                                                <a href="edit_film.html"><img src="../images/icons/edit.svg" alt=""></a>
+                                                <button><img src="../images/icons/delete.svg" alt=""></button>
+                                            </div>
+
+                                        </div>
+                                        <div class="mark_film">6.8</div>
+                                        <div class="film_admin">
+                                            <img src="../images/films/film1.png" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Кнопки навигации -->
+                                <div class="buttons_slider">
+                                    <div class="but_prev"><img src="../images/icons/arrow.svg" alt="Назад"></div>
+                                    <div class="but_next"><img src="../images/icons/arrow.svg" alt="Вперед"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- Конец подборок -->
+            </div>
+        </div>
+        <!-- Конец главной админа -->
+    </div>
+    <!-- Конец профиля -->
+
+
+    <!-- Начало подвала -->
+    <footer class="cont">
+        <div class="footer_top">
+            <div class="social">
+                <a href="#"><img src="../images/icons/MAX1.svg" alt=""></a>
+                <a href="#"><img src="../images/icons/ВК1.svg" alt=""></a>
+                <a href="#"><img src="../images/icons/RUTUBE1.svg" alt=""></a>
+            </div>
+            <h4>Мы всегда рады помочь</h4>
+        </div>
+        <div class="footer_text">
+            <p>Сервис Киносфера может содержать информацию, не предназначенную для несовершеннолетних.
+                На Киносфере есть фильмы и сериалы, в которых упоминаются наркотики. Незаконное потребление
+                наркотических средств, психотропных веществ, их аналогов причиняет вред здоровью, их незаконный оборот
+                запрещён и влечёт установленную законодательством ответственность.</p>
+
+            <div class="footer_adress">
+                <p>Есть вопросы ? Напишите нам: kinosfera@gmail.com</p>
+                <p>Адрес главного офиса: ул Баумана, 60</p>
+            </div>
+
+            <p>© 2026 Киносфера. 18+</p>
+        </div>
+    </footer>
+    <!-- Конец подвала -->
+</body>
+
+</html>
